@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accesorios",
+  "info": {
+    "singularName": "accesorio",
+    "pluralName": "accesorios",
+    "displayName": "Accesorio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "accesorio_tipo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::accesorio-tipo.accesorio-tipo",
+      "inversedBy": "accesorios"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "accesorios"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

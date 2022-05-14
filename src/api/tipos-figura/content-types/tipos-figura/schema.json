@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipos_figuras",
+  "info": {
+    "singularName": "tipos-figura",
+    "pluralName": "tipos-figuras",
+    "displayName": "FiguraTipo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "figuras": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::figura.figura",
+      "mappedBy": "figura_tipo"
+    }
+  }
+}

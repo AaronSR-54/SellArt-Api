@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accesorio_tipos",
+  "info": {
+    "singularName": "accesorio-tipo",
+    "pluralName": "accesorio-tipos",
+    "displayName": "AccesorioTipo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "accesorios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::accesorio.accesorio",
+      "mappedBy": "accesorio_tipo"
+    }
+  }
+}

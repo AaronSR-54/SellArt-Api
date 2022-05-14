@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pintura_tipos",
+  "info": {
+    "singularName": "pintura-tipo",
+    "pluralName": "pintura-tipos",
+    "displayName": "PinturaTipo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "pinturas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pintura.pintura",
+      "mappedBy": "pintura_tipo"
+    }
+  }
+}
