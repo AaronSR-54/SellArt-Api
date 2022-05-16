@@ -40,6 +40,9 @@
       "relation": "manyToOne",
       "target": "api::tipos-figura.tipos-figura",
       "inversedBy": "figuras"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

@@ -40,6 +40,9 @@
     },
     "price": {
       "type": "decimal"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
