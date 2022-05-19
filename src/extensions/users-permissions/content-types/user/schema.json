@@ -80,6 +80,20 @@
       "relation": "oneToMany",
       "target": "api::figura.figura",
       "mappedBy": "user"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "biography": {
+      "type": "text"
     }
   }
 }
