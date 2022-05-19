@@ -15,10 +15,10 @@
     "name": {
       "type": "string"
     },
-    "accesorios": {
+    "productos": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::accesorio.accesorio",
+      "target": "api::producto.producto",
       "mappedBy": "accesorio_tipo"
     }
   }

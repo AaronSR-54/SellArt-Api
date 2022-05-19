@@ -63,24 +63,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "accesorios": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::accesorio.accesorio",
-      "mappedBy": "user"
-    },
-    "pinturas": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::pintura.pintura",
-      "mappedBy": "user"
-    },
-    "figuras": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::figura.figura",
-      "mappedBy": "user"
-    },
     "avatar": {
       "type": "media",
       "multiple": false,
@@ -94,6 +76,11 @@
     },
     "biography": {
       "type": "text"
+    },
+    "productos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::producto.producto"
     }
   }
 }

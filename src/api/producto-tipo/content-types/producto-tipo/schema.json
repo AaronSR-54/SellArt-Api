@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "pintura_tipos",
+  "collectionName": "producto_tipos",
   "info": {
-    "singularName": "pintura-tipo",
-    "pluralName": "pintura-tipos",
-    "displayName": "PinturaTipo",
-    "description": ""
+    "singularName": "producto-tipo",
+    "pluralName": "producto-tipos",
+    "displayName": "ProductoTipo"
   },
   "options": {
     "draftAndPublish": true
@@ -19,7 +18,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::producto.producto",
-      "mappedBy": "pintura_tipo"
+      "mappedBy": "producto_tipo"
     }
   }
 }

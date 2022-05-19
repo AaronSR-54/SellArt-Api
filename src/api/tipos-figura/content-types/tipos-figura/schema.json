@@ -15,10 +15,10 @@
     "name": {
       "type": "string"
     },
-    "figuras": {
+    "productos": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::figura.figura",
+      "target": "api::producto.producto",
       "mappedBy": "figura_tipo"
     }
   }

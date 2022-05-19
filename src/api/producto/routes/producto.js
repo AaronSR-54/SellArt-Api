@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * figura router.
+ * producto router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::figura.figura');
+module.exports = createCoreRouter('api::producto.producto');
