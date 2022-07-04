@@ -55,12 +55,6 @@
       "relation": "manyToOne",
       "target": "api::producto-tipo.producto-tipo",
       "inversedBy": "productos"
-    },
-    "pedido": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::pedido.pedido",
-      "inversedBy": "productos"
     }
   }
 }

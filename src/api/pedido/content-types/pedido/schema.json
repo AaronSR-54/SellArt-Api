@@ -12,17 +12,32 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "productos": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::producto.producto",
-      "mappedBy": "pedido"
-    },
     "user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "pedidos"
+    },
+    "Direccion": {
+      "type": "string"
+    },
+    "Localidad": {
+      "type": "string"
+    },
+    "MetodoPago": {
+      "type": "string"
+    },
+    "NumTarjeta": {
+      "type": "string"
+    },
+    "CadTarjeta": {
+      "type": "string"
+    },
+    "pedido_productos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pedido-producto.pedido-producto",
+      "mappedBy": "pedido"
     }
   }
 }
