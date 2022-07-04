@@ -114,3 +114,5 @@ build
 .strapi-updater.json
 SellArt-Repository
 SellArt-Repository
+config/admin.js
+package-lock.json
