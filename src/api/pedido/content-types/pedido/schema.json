@@ -38,6 +38,9 @@
       "relation": "oneToMany",
       "target": "api::pedido-producto.pedido-producto",
       "mappedBy": "pedido"
+    },
+    "estado": {
+      "type": "string"
     }
   }
 }
