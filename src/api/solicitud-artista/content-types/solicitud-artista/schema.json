@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solicitudes_artista",
+  "info": {
+    "singularName": "solicitud-artista",
+    "pluralName": "solicitudes-artista",
+    "displayName": "SolicitudArtista",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
