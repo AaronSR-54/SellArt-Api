@@ -18,19 +18,19 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "pedidos"
     },
-    "Direccion": {
+    "direccion": {
       "type": "string"
     },
-    "Localidad": {
+    "localidad": {
       "type": "string"
     },
-    "MetodoPago": {
+    "metodoPago": {
       "type": "string"
     },
-    "NumTarjeta": {
+    "numTarjeta": {
       "type": "string"
     },
-    "CadTarjeta": {
+    "cadTarjeta": {
       "type": "string"
     },
     "pedido_productos": {
